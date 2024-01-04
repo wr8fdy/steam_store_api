@@ -1,0 +1,26 @@
+[package]
+name = "steam_store_api"
+version = "0.1.0"
+edition = "2021"
+authors = ["wr8fdy <blinddwarf@gmail.com>"]
+description = "Safe Rust bindings for the Steam Store API"
+readme = "README.md"
+repository = "https://github.com/wr8fdy/steam_store_api"
+license = "MIT"
+keywords = ["steam", "api"]
+categories = ["api-bindings"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.13", features = ["serde_json", "json"] }
+serde = { version = "1.0.152", features = ["derive"] }
+serde-aux = "4.3.1"
+serde_json = "1.0.91"
+url = "2.3.1"
+thiserror = "1.0.51"
+rust_iso3166 = "0.1.11"
+
+[dev-dependencies]
+anyhow = "1.0.68"
+tokio = { version = "1.24.0", features = ["full"] }
