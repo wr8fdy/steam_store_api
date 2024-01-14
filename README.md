@@ -7,7 +7,6 @@ This is based on the [unofficial Steam Storefront](https://wiki.teamfortress.com
 # Example
 
 ```rust
-#
 use anyhow::Result;
 use steam_store_api::prelude::*;
 
